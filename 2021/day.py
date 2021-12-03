@@ -7,7 +7,7 @@ day = sys.argv[1]
 os.mkdir(day)
 
 base_py = """with open('input') as f:
-    lines = f.read().split('\n')
+    lines = f.read().split('\\n')
 lines = [_ for _ in lines if _]"""
 
 with open(f'{day}/input', 'w') as f:
