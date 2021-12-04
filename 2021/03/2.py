@@ -15,7 +15,7 @@ coo_list = lines
 for i in range(len(lines[0])):
     c = defaultdict(list)
     if len(oo_list) == 1:
-        oo.extend(oo_list[0][i:])
+        oo = oo_list[0]
         break
     for word in oo_list:
         c[word[i]].append(word)
@@ -31,7 +31,7 @@ for i in range(len(lines[0])):
 
 for i in range(len(lines[0])):
     if len(coo_list) == 1:
-        print(''.join(coo) == coo_list[0])
+        coo = coo_list[0]
         break
     c = defaultdict(list)
     for word in coo_list:

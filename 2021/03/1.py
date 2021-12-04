@@ -4,7 +4,6 @@ lines = [_ for _ in lines if _]
 
 from collections import Counter
 
-
 gamma = []
 epsilon = []
 
