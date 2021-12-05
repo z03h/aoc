@@ -5,7 +5,11 @@ BASE_URL = 'https://adventofcode.com/2021/day/{}/input'
 
 day = sys.argv[1]
 
-os.mkdir(f'{day:0>2}')
+day = f'{day:0>2}'
+try:
+    os.mkdir(day)
+except:
+    pass
 
 base_py = """with open('input') as f:
     lines = f.read().split('\\n')
