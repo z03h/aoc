@@ -8,12 +8,12 @@ day = sys.argv[1]
 day = f'{day:0>2}'
 try:
     os.mkdir(day)
-except:
+except Exception:
     pass
 
 base_py = """with open('input') as f:
     lines = f.read().split('\\n')
-lines = [_ for _ in lines if _]"""
+lines = [_ for _ in lines if _]\n\n"""
 
 with open(f'{day}/input', 'w') as f:
     ...
