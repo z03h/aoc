@@ -11,7 +11,7 @@ try:
 except Exception:
     pass
 
-base_py = """with open('input') as f:
+base_py = """with open('test') as f:
     lines = f.read().split('\\n')
 lines = [_ for _ in lines if _]\n\n"""
 
