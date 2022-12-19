@@ -8,8 +8,9 @@ day = sys.argv[1]
 day = f'{day:0>2}'
 try:
     os.mkdir(day)
-except Exception:
-    pass
+except FileExistsError:
+    # probably already exists?
+    exit()
 
 base_py = """with open('test') as f:
     lines = f.read().split('\\n')
