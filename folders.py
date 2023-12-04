@@ -1,6 +1,6 @@
 import os
 
-folder: str = "2022"
+folder: str = "2023"
 
 for i in range(1, 26):
     folder_path = f'{folder}/{i}'
