@@ -128,5 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-input.txt
-test.txt
+input.*
+test.*
+input
+test
