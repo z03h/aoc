@@ -1,7 +1,7 @@
 
 
 
-with open('input.txt', 'r') as f:
+with open('test2.txt', 'r') as f:
     data = f.read()
 
 empty_rows = []
